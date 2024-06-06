@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 40px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-left: 30px;
+    transition: transform 0.5s ;
+}
+
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav img{
+    width: 100px;
+}
+
+
+nav ul li div {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    padding: 6px 0;
+    background: #000000;
+
+}
+
+nav ul li div::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background: #ff4655;
+    transition: 0.4s;
+}
+
+nav ul li:hover div::after {
+    background: #ece8e1;
+}
+nav ul li:hover{
+    transform: translateY(-5px);
+
+}
+
+
+header 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.cart
+{
+    width: 500px;
+    height: 700px;
+    margin: 5px;
+    padding: 15px;
+    border: 2px solid white;
+}
+.cart img
+{   
+    width: 330px;
+    margin-left: 50px;
+}
+
+header h1 
+{
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff4655;
+}
+
+header h2
+{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.but
+{
+    height: 110px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+button div {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+button div::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    height: 5px;
+    background: #ff0015;
+    transition: 0.4s;
+}
+
+button:hover div::after {
+    background: #ece8e1;
+}
+
+button div span {
+    position: absolute;
+    width: 120%;
+    height: 133%;
+    transform: translate(-100%, -20px);
+    background: #ff4655;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    transition: 0.4s;
+}
+
+button:hover div span {
+    transform: translate(-10%, -20px);
+}
+
+button div a {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 80px;
+}
+
+/* -------------- email and password */
+input
+{
+    color: #000;
+}
+.login
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(c:\Users\pc\Downloads\wallpaperflare.com_wallpaper.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form 
+{   
+    width: 500px;
+    background-color: white;
+    color: #000;
+    border-radius: 15px;
+}
+.errer
+{
+    color: #ff0015;
+
+}
